@@ -55,7 +55,7 @@ Inspeccionar la imagen hello-world
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+El ID de la imagen se genera utilizando el algoritmo de hash SHA256.
 
 ### Filtrar imágenes
 
