@@ -59,9 +59,10 @@ Inspeccionar la imagen hello-world
 docker inspect hello-world
 ```
 
-**¿Con qué algoritmo se está generando el ID de la imagen**
+**¿Con qué algoritmo se está generando el ID de la imagen?**
+```
 El ID de la imagen se genera utilizando el algoritmo de hash SHA256.
-
+```
 ### Filtrar imágenes
 
 ```
