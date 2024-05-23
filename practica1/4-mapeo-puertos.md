@@ -18,7 +18,7 @@ docker run -d --name srv-web -p 3000:80 nginx:alpine
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:3000
 
 ```
-![image](https://github.com/DarioRodriguez47/2024A-ISWD633-GR1/assets/119013716/7bda966c-f845-4411-91db-efb0a1ad478a)
+![image](imagenes/Cap1.png)
 
 ```
 ### Para mapear más de un puerto
