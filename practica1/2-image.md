@@ -40,7 +40,8 @@ docker pull nginx:alpine
 ```
 docker images
 ```
-![Imagen](practica1/imagenes/Cap2.png)
+![image](imagenes/Cap2.png)
+
 
 
 **Identificadores**
