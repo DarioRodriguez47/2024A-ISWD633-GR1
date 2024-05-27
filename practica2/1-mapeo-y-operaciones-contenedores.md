@@ -20,7 +20,6 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 docker run -d --name jenkins_server --publish 8080:8080 --publish 50000:50000 jenkins/jenkins:alpine3.18-jdk11
 ```
 
-# COMPLETAR
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
