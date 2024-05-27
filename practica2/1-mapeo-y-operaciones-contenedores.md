@@ -65,12 +65,14 @@ docker exec -i <nombre contenedor> <programa o comando>
 -i: mantiene abierta la entrada estándar (stdin) del contenedor. Esto significa que puedes enviar datos al proceso que se está ejecutando en el contenedor a través de la terminal local. *Sin embargo, esto no asigna un terminal al contenedor, por lo que no podrás ver la salida del proceso de forma interactiva.*
 
 ### Ejecutar una de las siguientes instrucciones
+
+con este codigo ingresas al contenedor
 ```
-docker exec -i <nombre contenedor> /bin/bash 
+docker exec -it <nombre contenedor> /bin/bash 
 ```
 ó
 ```
-docker exec -i <nombre contenedor> bash 
+docker exec -it <nombre contenedor> bash 
 ```
 **Considerar**
 - /bin/bash: Al especificar la ruta completa del shell, Docker buscará el ejecutable /bin/bash en el sistema de archivos del contenedor y lo ejecutará. Esto es útil cuando quieres asegurarte de que se está utilizando un shell específico que está ubicado en una ubicación conocida en el sistema de archivos del contenedor. 
@@ -86,6 +88,8 @@ Ejecutar
 whoami
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA
+![Imagen](imagenes/img3.PNG)
+
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
@@ -109,6 +113,8 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
 
+
+![Imagen](imagenes/img4.PNG)
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
 
