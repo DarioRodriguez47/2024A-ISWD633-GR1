@@ -9,7 +9,7 @@
 En el esquema del ejercicio la carpeta contenedor (a) es (COMPLETAR CON LA RUTA)
 Ruta carpeta host: .../ejercicio3/db
 
-### ¿Qué contiene la carpeta db del host?
+0### ¿Qué contiene la carpeta db del host?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
 
 ### Crear un contenedor con la imagen mysql:8  en la red net-wp, configurar las variables de entorno: MYSQL_ROOT_PASSWORD, MYSQL_DATABASE, MYSQL_USER y MYSQL_PASSWORD
