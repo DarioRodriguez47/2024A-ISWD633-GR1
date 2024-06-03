@@ -7,7 +7,6 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 
 ### Crear un volumen tipo host con la imagen nginx:alpine, para la ruta carpeta host: directorio en donde se encuentra la carpeta html en tu computador y para la ruta carpeta contenedor: /usr/share/nginx/html esta ruta se obtiene al revisar la se obtiene desde la documentación
 ![Volúmenes](imagenes/volumen-host.PNG)
-# COMPLETAR CON EL COMANDO
 COMANDO
 ```
 docker run -d --name contenedor1 -p 8080:80  -v C:\html:/usr/share/nginx/html nginx:alpine
@@ -22,7 +21,7 @@ El archivo index.html original del contenedor será reemplazado por el index.htm
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
 Al ingresar al servidor de nginx, se vera el contenido que se encuentra dentro del directorio html en este caso la pagina web descargada en el sitio web proporcionado
 
 ```
