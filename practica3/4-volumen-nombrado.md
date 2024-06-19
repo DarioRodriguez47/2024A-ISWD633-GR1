@@ -21,7 +21,7 @@ Cuando creas un volumen nombrado, Docker asigna un punto de montaje específico 
 
 ### ¿Cuál es el Mountpoint de vol-postgres?
 
-![Imagen](imagenes/volumen.png)
+![Imagen](imagenes/img24.png)
 
 ```
 /var/lib/docker/volumes/vol-postgres/_data
@@ -51,13 +51,13 @@ docker network create --driver bridge net-drupal
 docker run -d --name server-postgres -e POSTGRES_DB=db_drupal -e POSTGRES_PASSWORD=12345 -e POSTGRES_USER=user_drupal -v vol-postgres:<ruta contenedor> --network net-drupal postgres
 _No es necesario exponer el puerto, debido a que nos vamos a conectar desde la misma red de docker_
 
-![Imagen](imagenes/server-postgres.png)
+![Imagen](imagenes/img25.png)
 
 
 ### Crear un cliente postgres vinculado a la red drupal a partir de la imagen dpage/pgadmin4, completar el correo
 docker run -d --name client-postgres --publish published=9500,target=80 -e PGADMIN_DEFAULT_PASSWORD=54321 -e PGADMIN_DEFAULT_EMAIL=<correo> --network net-drupal dpage/pgadmin4
 
-![Imagen](imagenes/pgadmin4.png)
+![Imagen](imagenes/img26.png)
 
 ### Usar el cliente postgres para conectarse al servidor postgres, para la conexión usar el nombre del servidor en lugar de la dirección IP.
 
@@ -77,7 +77,7 @@ En la pestaña Connection, completa los campos de la siguiente manera:
 
 Una vez cumplido estos pasos tendremos acceso al servidor postgres
 
-![Imagen](imagenes/img24.png)
+![Imagen](imagenes/img27.png)
 
 ### Crear los volúmenes necesarios para drupal, esto se puede encontrar en la documentación
 
@@ -90,15 +90,15 @@ docker volume create vol-drupal-themes
 ### Crear el contenedor server-drupal vinculado a la red, usar la imagen drupal, y vincularlo a los volúmenes nombrados
 docker run -d --name server-drupal --publish published=9700,target=80 -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> -v <nombre volumen>:<ruta contenedor> --network net-drupal drupal
 
-![Imagen](imagenes/drupal-img25.png)
+![Imagen](imagenes/img28.png)
 
 ### Ingrese al server-drupal y siga el paso a paso para la instalación.
 
-![Imagen](imagenes/drupal4.png)
+![Imagen](imagenes/img29.png)
 
 _La instalación puede tomar varios minutos, mientras espera realice un diagrama de los contenedores que ha creado en este apartado._
 
-![Imagen](imagenes/drawio.png)
+![Imagen](imagenes/img30.png)
 
 ### Eliminar un volumen específico
 ```
