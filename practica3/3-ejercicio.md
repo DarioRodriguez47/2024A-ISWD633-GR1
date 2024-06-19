@@ -26,7 +26,7 @@ docker run -d --name mi_mysql --network net-wp -v C:\Users\Public\Documents\ejer
 
 Se puede observar que se crearon unos archivos pertenecientes a la base de datos que posiblemente sean archivos de base de datos de MySQL, configuraciones específicas de MySQL (si las hay), posiblemente scripts de inicialización o configuración específicos del entorno, etc.
 
-![Imagen](imagenes/dbmi_sql.png)
+### COMPLETAR
 
 ### Para que persista la información es necesario conocer en dónde wordpress almacena la información.
 # COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
