@@ -26,7 +26,7 @@ docker run -d --name mi_mysql --network net-wp -v C:\Users\Public\Documents\ejer
 
 Se puede observar que se crearon unos archivos pertenecientes a la base de datos que posiblemente sean archivos de base de datos de MySQL, configuraciones específicas de MySQL (si las hay), posiblemente scripts de inicialización o configuración específicos del entorno, etc.
 
-### COMPLETAR
+![Imagen](imagenes/img23.png)
 
 ### Para que persista la información es necesario conocer en dónde wordpress almacena la información.
 # COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
@@ -42,7 +42,7 @@ docker run -d --name wordpress --network net-wp -e WORDPRESS_DB_HOST=mi_mysql:33
 R5*v9PJWhjh&wUu2WT
 ### Personalizar la apariencia de wordpress y agregar una entrada
 
-![Imagen](imagenes/personalizacion.png)
+###COMPLETAR
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
 
