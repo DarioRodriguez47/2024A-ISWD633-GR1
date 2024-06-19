@@ -101,7 +101,7 @@ docker network connect net-curso02 contenedor_4
 
 # COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
 
-![Imagen](imagenes/redes.png)
+![Imagen](imagenes/img16.png)
 
 # COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
 
@@ -111,13 +111,13 @@ Para poder ver los contenedores y las redes a las que estan vinculados, como con
 docker network inspect net-curso01
 ```
 
-![Imagen](imagenes/red01.png)
+![Imagen](imagenes/img17.png)
 
 ```
 docker network inspect net-curso02
 ```
 
-![Imagen](imagenes/red02.png)
+![Imagen](imagenes/img18.png)
 
 # Eliminar las redes creadas
 
@@ -155,5 +155,5 @@ docker network rm net-curso02
 
 comprobamos que las redes se eliminaron exitosamente listando las redes existentes
 
-![Imagen](imagenes/redesEliminadas.png)
+![Imagen](imagenes/img19.png)
 
